@@ -3,17 +3,17 @@ node_js:
 - 14.15.4
 env:
   global:
-    - NODE_ENV=test
+  - NODE_ENV=test
 before_install: if [[ `npm -v` != 6.14.10 ]]; then npm i -g npm@6.14.10; fi
 install:
-  - npm ci
+- npm ci
 script:
-  - npm run lint
-  - npm test
+- npm run lint
+- npm test
 deploy:
   provider: heroku
-  api_key: 
-    secure: ixg60QRfXHAwaU/HPiEUX1OTnHR4iOoVaHTKTgw3SvB+FVJl3KJcRfvOF/yJqxloiKMWWpK3Vb0uvuGJkU6CcJSRdCTXu4pEdmcQ1wwi6X30S7eYmpN56IAQV/ZCY3F4T/3+gw8Y+vR5ZTiYL9ptX18slOLOhXMTSKesfuMhhqEmDmbg20toZFGkvLTMZwJ30LM8UDxEXOXh8kv2ZwOwMCdnBzizk5jv82w9k79zxNBinlC6NG4ESBs3sWYWuVANRXNy0tYGthledmx5i+QPyzn934mMHcvT6kwJIxtWCHyeOzN+E3ycOEERlxbUxrmzSlRPt/HgfwOmW68+dvhKNglCuwxRBGGh0UYHt18rSDrPPilojDKAJxj/Hyu334PZfHBmucbYA1GmZgSFYrtTUQLsSajhw1/76ok2ffIaEu+VTukSO7U371ZhpYO61QE09fvhFRFTEpqZuf7B2TcxSwiartVLJiseTjslNSrvDevD1YPz3X+RFAnokS60SfICUJDcyyDp2JOFdqQ6W7T8hoozWWDRZkyIAoSZxgO478DvVRm+CKV6f9KW9/4dtLrz/p0s/7xlSw9eFwo+9E5GhIaUdGwL71gJfzTcXyVGQ3nzAP0MsDT1diclUsWdbONk0Vet71PrO0QMnBGjdBfc/RafUTVtFn7a4RDylvQpEnI=
+  api_key:
+    secure: dOFY4xGvyfZmt6ZAVD1C9WgDZ5M2nXVc3Co/RufXrDgByx1PLwgsEVF+6qys9RvpzV1oW1E9fi3fVyVCSdJN+JNJ5aUmlAoyDG9cDFCA2m3r9O88piMmn/8wl4nvYZ7L6q8J8Nu5G8XUirPg+N9mtdlWYDjO8HxnyiNoUWXLzps9gGPMeg8qhnnwDEoMv+WiYYw0pV14z2y5Ml5J1oh+EDUzNwFC3N+lozHVK4v5x6hVcdp6MxgfkIDTP+PX39wHAepjWPMjOiJ0CKKbs0aTYiQIep5P3NoI3zPxbOTWNFqvDftT0rAu6RyzdVAfGt39iOFpGiZgeyHgUjwWN9LtC50mxoQwvEDKqxp26tnej0o4P40npRnnL8tV54zNLYmGZTXZllEfK9b7cqakzcxRE0//9+rD75zX1TiCZ6iJQBjU2b8yjoNM5KwLoYdl5EIoE0gxVC2NkhlQp6PI7M5RcXgtCDioot/ZLe/5ThbWoCRb3Nw77rOFBIrvm3U1sRvgyO+6+Z2gzp09k4zRLKobb/22vSxDrEi6o7c4t4D+IFVP6CLpWgXAbHK6AqX1rhpUiuLEAgFp8XWC3NJdp8UITIq2BmqGh2nc/0fp2b8U695saB3Nd5F/gwKFjiTz+iOA49fwoot0+uQMgfKWhfY0+jiD9jo965rBnSqsnRuVTu8=
   app: ssn-app-staging
   on:
     branch: main
