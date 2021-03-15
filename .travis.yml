@@ -14,6 +14,6 @@ deploy:
   provider: heroku
   api_key:
     secure: dOFY4xGvyfZmt6ZAVD1C9WgDZ5M2nXVc3Co/RufXrDgByx1PLwgsEVF+6qys9RvpzV1oW1E9fi3fVyVCSdJN+JNJ5aUmlAoyDG9cDFCA2m3r9O88piMmn/8wl4nvYZ7L6q8J8Nu5G8XUirPg+N9mtdlWYDjO8HxnyiNoUWXLzps9gGPMeg8qhnnwDEoMv+WiYYw0pV14z2y5Ml5J1oh+EDUzNwFC3N+lozHVK4v5x6hVcdp6MxgfkIDTP+PX39wHAepjWPMjOiJ0CKKbs0aTYiQIep5P3NoI3zPxbOTWNFqvDftT0rAu6RyzdVAfGt39iOFpGiZgeyHgUjwWN9LtC50mxoQwvEDKqxp26tnej0o4P40npRnnL8tV54zNLYmGZTXZllEfK9b7cqakzcxRE0//9+rD75zX1TiCZ6iJQBjU2b8yjoNM5KwLoYdl5EIoE0gxVC2NkhlQp6PI7M5RcXgtCDioot/ZLe/5ThbWoCRb3Nw77rOFBIrvm3U1sRvgyO+6+Z2gzp09k4zRLKobb/22vSxDrEi6o7c4t4D+IFVP6CLpWgXAbHK6AqX1rhpUiuLEAgFp8XWC3NJdp8UITIq2BmqGh2nc/0fp2b8U695saB3Nd5F/gwKFjiTz+iOA49fwoot0+uQMgfKWhfY0+jiD9jo965rBnSqsnRuVTu8=
-  app: ssn-app-staging
+  app: bitesized-staging
   on:
     branch: main
