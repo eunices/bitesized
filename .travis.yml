@@ -9,7 +9,7 @@ install:
 - npm ci
 script:
 - npm run lint
-- npm test
+- npm run test-no-watch
 deploy:
   provider: heroku
   api_key:
